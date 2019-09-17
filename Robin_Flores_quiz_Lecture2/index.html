@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<title>Batman Pop Quiz</title>
+<link href ="style.css" rel ="stylesheet">
+<link href="https://fonts.googleapis.com/css?family=Lato" rel="stylesheet">
+<script src = "main.js"></script>
+
+</head>
+
+
+<body>
+<h1>Batman Pop Quiz!</h1>
+
+
+<form id = "quiz" name = "quiz">
+
+
+<p class = "questions">Who was the first robin?</p>
+<input id = "textbox" type = "text" name = "question1">
+
+<p class = "questions">Who played the Joker in the "The Dark Night?"</p>
+<input type = "radio" id = "mc" name = "question2" value = "Hartford"> Heath Ledger<br>
+<input type = "radio" id = "mc" name = "question2" value = "Heartford"> Joaquin Phoenix<br>
+
+<p class = "questions">What is the name of batman's butler?</p>
+
+<input type = "radio" id = "mc" name = "question3" value = "Albany"> Alfred<br>
+<input type = "radio" id = "mc" name = "question3" value = "All Benny's"> Harvey Dent<br>
+
+
+<input id = "button" type = "button" value = "I'm finished!" onclick = "check();">
+
+
+</form>
+
+<div id = "after_submit">
+<p id = "number_correct"></p>
+<p id = "message"></p>
+
+</div>
+</html>
