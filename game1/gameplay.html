@@ -1,0 +1,58 @@
+<html>
+
+
+<h1> Game </h1>
+
+
+<head>
+  <meta charset='utf-8'>
+
+  <style>
+
+  body {
+  	background-color: #FFF278;
+  }
+
+  canvas {border: 1px solid black;}
+
+</style>
+
+<body>
+  <img src="pacman.png" alt="Trulli" width="250" height="250">
+
+  <img src="coin.png" width="50" height="50">
+
+  <img src="background.png" width="1000" height="300">
+
+
+<canvas id="2ndcanvas" width="1200" height="480"></canvas>
+
+<script>
+var canvas = document.getElementById('2ndcanvas')
+var ctx = canvas.getContext('2d');
+
+var pic = new Image();
+pic.src='background.png';
+
+var myList = ['welcome', 'to', 'pacman'];
+alert(myList[0])
+
+var myCircle = {
+	element1 : 'welcome',
+	element2 : 'to pacman',
+	element3 : 'pacman',
+	function1 : function() {
+
+		ctx.beginPath();
+		ctx.arc(300,75,50,0,2*Math.PI);
+		ctx.stroke();
+	}
+}
+
+alert(myCircle['element2'])
+myCircle.function1();
+
+
+</script>
+</body>
+<html>
