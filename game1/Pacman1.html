@@ -1,0 +1,101 @@
+<!doctype html>
+<html>
+<meta charset="utf-8">
+<title>Canvas</title>
+<h1> PACMAN </h1>
+
+
+<head>
+  <meta charset='utf-8'>
+
+  <style>
+
+  body {
+  	background-color: #FFF278;
+  }
+
+  canvas {border: 1px solid black;}
+
+<style>
+#canvas{
+ outline:1px solid #000;
+}
+</style>
+</head>
+<body>
+  <img src="pacman.png" alt="Trulli" width="250" height="250">
+
+  <img src="coin.png" width="50" height="50">
+
+  <img src="background.png" width="1000" height="300">
+
+<canvas id="canvas" height="400" width="600"></canvas>
+
+<script>
+
+var canvas = document.querySelector('#canvas');
+var context = canvas.getContext('2d');
+
+var xPos = 0;
+var yPos = 0;
+
+context.rect(xPos, yPos, 50 , 50);
+context.stroke();
+
+function move(e){
+
+ //alert(e.keyCode);
+
+ if(e.keyCode==39){
+  xPos+=5;
+ }
+ if(e.keyCode==37) {
+  xPos-=5;
+ }
+ if (e.keyCode == 38) {
+  yPos-=5;
+ }
+ if (e.keyCode == 40){
+  yPos+=5;
+ }
+if(e.keyCode == 38){
+yPos-=5;
+}
+if(e.keyCode == 40){
+yPos+=5;
+}
+
+ canvas.width=canvas.width;
+ context.rect(xPos, yPos, 50 , 50);
+  context.stroke();
+
+}
+</script>
+<script>
+var canvas = document.getElementById('2ndcanvas')
+var ctx = canvas.getContext('2d');
+
+var myList = ['welcome', 'to', 'pacman'];
+alert(myList[0])
+
+var myCircle = {
+	element1 : 'welcome',
+	element2 : 'to pacman',
+	element3 : 'pacman',
+	function1 : function() {
+
+		ctx.beginPath();
+		ctx.arc(300,75,50,0,2*Math.PI);
+		ctx.stroke();
+	}
+}
+
+alert(myCircle['element2'])
+myCircle.function1();
+
+
+
+document.onkeydown = move;
+</script>
+</body>
+</html>
