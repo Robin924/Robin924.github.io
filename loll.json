@@ -1,0 +1,26 @@
+[
+  {
+    "name": "Veggie Castle",
+    "location" : "0.2 mile",
+    "menu": {
+      "best dish": ["fried zucchini", "mediterranean salad"],
+      "spicy dish": ["veggie chili", "fried spicy zucchini"]
+    }
+  },
+  {
+    "name": "Jungle Cafe",
+    "location" : "0.5 mile",
+    "menu": {
+      "best dish": ["beet burger", "jungle burrito"],
+      "spicy dish": ["coconut curry bowl"]
+    }
+  },
+  {
+    "name": "Secret Garden",
+    "location" : "0.7",
+    "menu": {
+      "best dish": ["mac and cheese "],
+      "spicy dish": ["spicy thai salad"]
+    }
+  }
+]
